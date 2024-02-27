@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 
 import { Header, CartInfo } from './styles';
-// import  Logo  from  '../../../../assets/shopping-cart.png';
+import Logo from '../../../../assets/shopping-cart.png';
 
 import { useCart } from '../../../../hooks/useCart';
 
@@ -24,7 +24,7 @@ export default function Home() {
       <Link to="/">
         <h1>
           <div>
-            {/* <img src={Logo} /> */}
+            <img src={Logo} />
           </div>
           <div>
             <span>/Eddies</span>

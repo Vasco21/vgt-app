@@ -7,8 +7,8 @@ import Menu from './components/Slider/sidebar';
 import CartList from './Pages/CartList';
 import CartPayment from './Pages/CartPayment';
 import CartConfirmation from './Pages/CartConfirmation';
-import AboutUs from './Pages/AboutUs';
-import Team from './Pages/Team';
+// import AboutUs from './Pages/AboutUs';
+// import Team from './Pages/Team';
 import Camera from './Pages/camera/Camera';
 import AppProvider from './provider/AppProvider';
 import GlobalStyle from './Styles/global';
@@ -28,10 +28,10 @@ function App() {
     path: '/',
     element: < Menu/>,
   }
-  const aboutTeam = {
-    path: '/',
-    element: <AboutUs />,
-  }
+  // const aboutTeam = {
+  //   path: '/',
+  //   element: <AboutUs />,
+  // }
   const contactInfo = {
     path: '/contact',
     element: <Contacts />,
@@ -41,10 +41,10 @@ function App() {
     element: <FindStore />,
   }
 
-  const teamM = {
-    path: '/team',
-    element: <Team/>,
-  }
+  // const teamM = {
+  //   path: '/team',
+  //   element: <Team/>,
+  // }
   const NewLooks = {
     path: '/looks',
     element: <LooksItems/>,

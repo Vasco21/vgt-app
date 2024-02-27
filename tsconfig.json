@@ -1,25 +1,26 @@
 {
   "compilerOptions": {
+    "typeRoots": ["./node_modules/@types", "./src/types"],
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
+    "strictNullChecks": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react"
+    "jsx": "react-jsx"
   },
   "include": [
-    "src"
-  ]
+    "src/**/*.ts" // *** The files TypeScript should type check ***
+, "src/assets/SvgLoading.js", "src/index.tsx", "src/App.tsx", "src/Pages/Avatar/styles.js", "src/hool/useCarts.tsx", "src/Pages/Home/Produts/index.tsx"  ],
+  "exclude": ["node_modules", "dist", "src/server/**/*"], // *** The files to not type check ***
+  "types": ["node", "webpack-env"]
 }
